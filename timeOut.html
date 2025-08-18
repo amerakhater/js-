@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript setTimeout Example</title>
+  <link rel="stylesheet" href="styles/timeOut.css">
+</head>
+<body>
+  <h1>JavaScript <code>setTimeout()</code> Example</h1>
+  <p><code>setTimeout()</code> is used to run a function once after a delay (in milliseconds).</p>
+
+  <h2>Example 1 – Simple Timeout</h2>
+  <div class="example">
+    <pre>
+setTimeout(() => {
+  console.log("This message appears after 2 seconds");
+}, 2000);
+    </pre>
+    <button onclick="example1()">Run Example</button>
+  </div>
+
+  <h2>Example 2 – With Parameters</h2>
+  <div class="example">
+    <pre>
+function greet(name) {
+  console.log("Hello, " + name);
+}
+
+setTimeout(greet, 3000, "Amira");
+    </pre>
+    <button onclick="example2()">Run Example</button>
+  </div>
+
+  <h2>Example 3 – Cancel Timeout</h2>
+  <div class="example">
+    <pre>
+let timeoutId = setTimeout(() => {
+  console.log("This will NOT show");
+}, 4000);
+
+clearTimeout(timeoutId);
+    </pre>
+    <button onclick="example3()">Run Example</button>
+  </div>
+
+  <h2>Example 4 – Start & Cancel with Buttons</h2>
+  <div class="example">
+    <button id="start">Start Timer</button>
+    <button id="cancel">Cancel Timer</button>
+  </div>
+<script src="js/timeOut.js"></script>
+</body>
+</html>

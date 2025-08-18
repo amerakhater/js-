@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript "this" Example</title>
+  <link rel="stylesheet" href="styles/this.css">
+</head>
+<body>
+  <h1>Understanding <code>this</code> in JavaScript</h1>
+  <p>The value of <code>this</code> depends on <strong>how a function is called</strong>.</p>
+
+  <!-- Example 1 -->
+  <h2>Example 1 – Global Context</h2>
+  <div class="example">
+    <pre>
+console.log(this);
+    </pre>
+    <button onclick="example1()">Run Example</button>
+    <div id="output1" class="output"></div>
+  </div>
+
+  <!-- Example 2 -->
+  <h2>Example 2 – Inside an Object Method</h2>
+  <div class="example">
+    <pre>
+let person = {
+  name: "Amira",
+  greet: function() {
+    console.log("Hi, I'm " + this.name);
+  }
+};
+person.greet();
+    </pre>
+    <button onclick="example2()">Run Example</button>
+    <div id="output2" class="output"></div>
+  </div>
+
+  <!-- Example 3 -->
+  <h2>Example 3 – In a Regular Function</h2>
+  <div class="example">
+    <pre>
+function showThis() {
+  console.log(this);
+}
+showThis();
+    </pre>
+    <button onclick="example3()">Run Example</button>
+    <div id="output3" class="output"></div>
+  </div>
+
+  <!-- Example 4 -->
+  <h2>Example 4 – In an Arrow Function</h2>
+  <div class="example">
+    <pre>
+let obj = {
+  value: 100,
+  arrow: () => console.log(this.value)
+};
+obj.arrow();
+    </pre>
+    <button onclick="example4()">Run Example</button>
+    <div id="output4" class="output"></div>
+  </div>
+
+  <!-- Example 5 -->
+  <h2>Example 5 – With Event Listener</h2>
+  <div class="example">
+    <pre>
+document.querySelector("#btn").addEventListener("click", function() {
+  console.log(this); // the button itself
+});
+    </pre>
+    <button id="btn">Click Me</button>
+    <div id="output5" class="output"></div>
+  </div>
+<script src="js/this.js"></script>
+</body>
+</html>
