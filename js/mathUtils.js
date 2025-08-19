@@ -11,3 +11,13 @@ export function multiply(a, b) {
 export default function subtract(a, b) {
   return a - b;
 }
+
+export function division(a,b){
+    return a/b;
+}
+
+export function calculateArea(l, w){
+    return l*w;
+}
+
+export const PI = 3.14; 

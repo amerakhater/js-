@@ -9,11 +9,36 @@
 // }
 
 // function processUserInput(callback) {
-//   let userName = "Amira";
+//   let userName = "Samira";
 //   callback(userName); // calling the callback
 // }
 
 // processUserInput(sayHello);
+
+// function calculateArea(l, w){
+//     return l*w;
+// }
+
+// function biggerRoom(callback){
+//     if (callback(5,0)>callback(3,5)){
+//         console.log("choose first room");
+//     }
+//     else{
+//         console.log("choose second room");
+//     }
+// }
+// function biggerRoom2(){
+//     let area1 = 5*0;
+//     let area2 = 3*5;
+//     if (area1>area2){
+//         console.log("choose first room");
+//     }
+//     else{
+//         console.log("choose second room");
+//     }
+// }
+
+// biggerRoom(calculateArea)
 
 
 //==============================================================================================================================
@@ -37,13 +62,18 @@
 //==============================================================================================================================
 
 
-//🔹 3. Callback with setTimeout (asynchronous)
+//🔹 3. Callback with setTimeout (asynchronous)(function, time in millisecond)
 
 // console.log("Start");
+// console.log("This runs after 4 seconds not in time out ");
 
 // setTimeout(() => {
-//   console.log("This runs after 2 seconds");
-// }, 2000);
+//   console.log("This runs after 4 seconds");
+// }, 4000);
+
+setTimeout(() => {
+  console.log("This runs after 2 seconds");
+}, 2000);
 
 // console.log("End");
 

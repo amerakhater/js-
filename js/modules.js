@@ -1,8 +1,10 @@
-// main.js
-import subtract, { add, multiply } from "./mathUtils.js";
-import { greet } from "./greetUtils.js";
+import { calculateArea, division } from "./mathUtils.js";
+import {greet} from './greetUtils.js'
+console.log(calculateArea(5,6));
+document.getElementById("area").innerText = "The area of the the rectangle is "+calculateArea(5,6);
 
-console.log(add(5, 3));        // 8
-console.log(multiply(4, 2));   // 8
-console.log(subtract(10, 6));  // 4
-console.log(greet("Amira"));   // Hello, Amira!
+Math.random
+
+document.getElementById("greet").innerText = greet("Amira");
+
+
