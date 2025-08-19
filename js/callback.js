@@ -71,9 +71,9 @@
 //   console.log("This runs after 4 seconds");
 // }, 4000);
 
-setTimeout(() => {
-  console.log("This runs after 2 seconds");
-}, 2000);
+// setTimeout(() => {
+//   console.log("This runs after 2 seconds");
+// }, 2000);
 
 // console.log("End");
 
@@ -83,9 +83,9 @@ setTimeout(() => {
 
 //🔹 4. Callback with Array Methods
 
-// let numbers = [1, 2, 3, 4];
+// let numbersss = [1, 2, 3, 4];
 
-// numbers.forEach(num => {
+// numbersss.forEach(num => {
 //   console.log(num * 2);
 // });
 
@@ -149,6 +149,9 @@ setTimeout(() => {
 //   { id: 2, name: "Omar" },
 //   { id: 3, name: "Laila" }
 // ];
+// // user = users[0].name
+// // user = users[1].name
+// // user = users[2].name
 
 // let names = users.map(user => user.name);
 

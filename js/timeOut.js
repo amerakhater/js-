@@ -15,6 +15,7 @@
 
     // Example 3
     function example3() {
+
       let timeoutId = setTimeout(() => {
         alert("This will NOT show");
       }, 4000);
@@ -25,11 +26,13 @@
     // Example 4
     let timeoutId;
     document.getElementById("start").addEventListener("click", () => {
+      console.log("Stated")
       timeoutId = setTimeout(() => {
         alert("Time’s up!");
       }, 5000);
     });
     document.getElementById("cancel").addEventListener("click", () => {
+      console.log("Ended")
       clearTimeout(timeoutId);
       alert("Timer canceled!");
     });
