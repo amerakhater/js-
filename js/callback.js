@@ -172,7 +172,7 @@
 // //🔹 6. Practical Example — Success & Error Callbacks
 
 // function fetchData(successCallback, errorCallback) {
-//   let success = true; // pretend this is a server response
+//   let success = false; // pretend this is a server response
 
 //   if (success) {
 //     successCallback("Data loaded successfully!");
