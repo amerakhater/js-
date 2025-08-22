@@ -64,20 +64,26 @@
 
 //🔹 3. Callback with setTimeout (asynchronous)(function, time in millisecond)
 
-// console.log("Start");
-// console.log("This runs after 4 seconds not in time out ");
+console.log("Start");
+console.log("This runs after 4 seconds not in time out ");
 
-// setTimeout(() => {
-//   console.log("This runs after 4 seconds");
-// }, 4000);
+setTimeout(() => {
+  console.log("This runs after 4 seconds");
+}, 4000);
 
-// setTimeout(() => {
-//   console.log("This runs after 2 seconds");
-// }, 2000);
+setTimeout(() => {
+  console.log("This runs after 2 seconds");
+}, 2000);
 
-// console.log("End");
-
-
+console.log("End");
+// frtch --> db, json, object 
+var user = {
+    name:"karim", 
+    age:24, 
+    coursse: "web"
+}
+console.log(user.name)
+// Async/Await 
 //==============================================================================================================================
 
 
